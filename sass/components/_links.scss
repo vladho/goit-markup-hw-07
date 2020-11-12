@@ -1,0 +1,53 @@
+.link {
+  text-decoration: none;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+
+.site-nav .link,
+.kontaktu-nav .link {
+  /*  display: block; */
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $primary-text-color;
+  text-decoration: none;
+}
+
+.nav-address.link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+.site-nav .link.current {
+  position: relative;
+  color: $accent-color;
+}
+
+.link.current:after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.link:hover,
+.link:focus {
+  color: $accent-color;
+}
+
+.link:hover .nav-address-svg,
+.link:focus .nav-address-svg {
+  fill: #2196f3;
+}
