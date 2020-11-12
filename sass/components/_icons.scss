@@ -20,12 +20,12 @@
 
   &-link:hover &-svg,
   &-link:focus &-svg {
-    fill: white;
+    fill: $primary-white-color;
   }
 
   &-link:hover,
   &-link:focus {
-    background-color: #2196f3;
+    background-color: $accent-color;
   }
 
   &-svg {

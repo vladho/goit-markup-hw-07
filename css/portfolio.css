@@ -140,7 +140,7 @@ img {
 }
 
 .part-logo-footer {
-  color: white;
+  color: #ffffff;
 }
 
 .link {
@@ -149,9 +149,29 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.link.current:after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.link:hover, .link:focus {
+  color: #2196f3;
+}
+
+.link:hover .nav-address-svg,
+.link:focus .nav-address-svg {
+  fill: #2196f3;
+}
+
 .site-nav .link,
 .kontaktu-nav .link {
-  /*  display: block; */
   padding-top: 32px;
   padding-bottom: 32px;
   color: #212121;
@@ -171,28 +191,6 @@ img {
 .site-nav .link.current {
   position: relative;
   color: #2196f3;
-}
-
-.link.current:after {
-  display: block;
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
-}
-
-.link:hover,
-.link:focus {
-  color: #2196f3;
-}
-
-.link:hover .nav-address-svg,
-.link:focus .nav-address-svg {
-  fill: #2196f3;
 }
 
 .social-icons {
@@ -218,7 +216,7 @@ img {
 
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
-  fill: white;
+  fill: #ffffff;
 }
 
 .social-icons-link:hover, .social-icons-link:focus {
