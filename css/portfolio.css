@@ -28,11 +28,10 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.menu-section {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  /*  .portfol& {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  } */
 }
 
 .button {
@@ -180,6 +179,53 @@ img {
 .link:hover .nav-address-svg,
 .link:focus .nav-address-svg {
   fill: #2196f3;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+  fill: white;
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: #2196f3;
+}
+
+.footer-social .social-icons {
+  justify-content: start;
+}
+
+.footer-social .social-icons-svg {
+  fill: #ffffff;
 }
 
 .nav {
