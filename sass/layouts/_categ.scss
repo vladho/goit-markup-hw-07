@@ -1,13 +1,16 @@
+.categ-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: black;
+  margin: 0px;
+}
 .categ-text {
   font-size: 16px;
   line-height: 1.87;
   color: #757575;
   margin: 0px;
-}
-
-.categ-image {
-  position: relative;
-  overflow: hidden;
 }
 
 .categ-hidden-text {
@@ -28,25 +31,9 @@
   transform: translateY(100%);
 }
 
-.categ-link {
-  text-decoration: none;
-  transition-duration: $transition-duration;
-  transition-timing-function: $transition-timing-function;
-}
-.categ-link:hover .categ-hidden-text,
-.categ-link:focus .categ-hidden-text {
-  opacity: 1;
-  background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(0);
-}
-
-.categ-title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: black;
-  margin: 0px;
+.categ-image {
+  position: relative;
+  overflow: hidden;
 }
 
 .categ-review {
@@ -65,13 +52,26 @@
   outline: 1px solid #eeeeee;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
 }
 
-.categ-item:hover,
-.categ-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+.categ-link {
+  text-decoration: none;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
-.categ-item:nth-child(3n) {
-  margin-right: 0px;
+  &:hover .categ-hidden-text,
+  &:focus .categ-hidden-text {
+    opacity: 1;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(0);
+  }
 }

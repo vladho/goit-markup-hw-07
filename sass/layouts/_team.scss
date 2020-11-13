@@ -24,6 +24,9 @@
   background-color: $primary-white-color;
 }
 
+.team-box .team-item:not(:last-child) {
+  margin-right: 30px;
+}
 .team-title {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -35,8 +38,4 @@
 
 .team-box {
   display: flex;
-}
-
-.team-box .team-item:not(:last-child) {
-  margin-right: 30px;
 }

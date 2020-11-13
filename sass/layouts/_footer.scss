@@ -48,11 +48,6 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* 
-.footer-social:last-child {
-  margin-right: -30px;
-} */
-
 .footer-icon-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -60,6 +55,12 @@
 .footer-list {
   width: calc((100% - 30px * 3) / 4);
 }
+
+.footer .button.first {
+  display: flex;
+  min-width: 200px;
+}
+
 .footer-title-sign {
   margin-top: 0px;
   font-weight: bold;

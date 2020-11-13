@@ -13,11 +13,6 @@
   color: #2196f3;
 }
 
-/* .kontaktu-nav .item {
-  display: flex;
-  align-items: center;
-} */
-
 .nav-address-svg {
   margin-right: 10px;
   fill: #757575;
@@ -41,27 +36,6 @@
 .site-nav .item + .item {
   margin-left: 50px;
 }
-/* 
-.nav-address::before {
-  display: inline-flex;
-  content: "";
-  margin-right: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
-
-/* .nav-address::before {
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/icon/envelope.svg);
-  fill: red;
-} */
-/* 
-.nav-address.tel::before {
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/icon/Vector.svg);
-} */
 
 .kontaktu-nav {
   display: flex;
