@@ -82,35 +82,6 @@ img {
   padding: 6px 22px;
 }
 
-.hero-button-close {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 8px;
-  right: 8px;
-  height: 30px;
-  width: 30px;
-  background: #ffffff;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-}
-
-.hero-button-close:hover .button-svg,
-.hero-button-close:focus .button-svg {
-  fill: #2196f3;
-}
-
-.hero-button-close-svg {
-  height: 11px;
-  widows: 11px;
-  fill: #212121;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .logo {
   margin-right: 93px;
   font-family: "Raleway", sans-serif;
